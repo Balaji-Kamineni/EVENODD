@@ -1,0 +1,40 @@
+<html>
+<head> 
+<title> EVENODD PAGE </title>
+		<script>
+		function isalnum(c) {
+			return (isalpha(c) || isdigit(c));
+			}
+
+
+		function validate(){
+				num=document.getElementById("num").value
+				if (num==null || num=="")
+				{
+					alert("enter a value");
+					return false
+				}
+				
+				return true
+			}
+		</script>
+</head>
+<body bgcolor=green>
+<form action=f.com type=post onSubmit=return(validate())>
+<h1 align=center> Finding Entered number is Even or Odd </h1>
+<hr><br><br><br><br>
+<table align=center>
+<tr>
+	<td>Enter a number
+	</td>
+	<td align=left> <input type=text  id=num name=num></td>
+</tr>
+<tr>
+<td>
+</td>
+<td> <br><input type=submit value=Find > </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
